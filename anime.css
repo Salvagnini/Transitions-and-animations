@@ -1,0 +1,242 @@
+/* ********all_version********** */
+
+.center
+{
+    animation-name: blok_up;
+    animation-duration: 1.5s;
+}
+@keyframes blok_up{
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.center>p+span+p,
+.buttons {
+    animation-name: blok_upp;
+    animation-duration: 2s;
+}
+@keyframes blok_upp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card{
+    animation-name: blok_left;
+    animation-duration: 2.5s;
+}
+@keyframes blok_left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    50% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+/* ********Desktop******** */
+@media screen and (min-width: 1150px) {
+    .plys{
+        animation-name: plys_go;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes plys_go {
+        0% {
+        top: 50%;
+        left: 50%;
+        }
+    }
+    
+    .zag_right_1{
+        animation-name: right_1;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes right_1 {
+        0% {
+        opacity: 0;
+        transform: translate(-50%, -50%);    
+        }
+    }
+        .zag_right_2{
+        animation-name: right_2;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes right_2 {
+        0% {
+        opacity: 0;
+        transform: translate(-50%, 0%);    
+        }
+    }
+        .zag_right_3{
+        animation-name: right_3;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes right_3 {
+        0% {
+        opacity: 0;
+        transform: translate(-50%, 50%);    
+        }
+    }
+
+        .zag_left_1{
+        animation-name: left_1;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes left_1 {
+        0% {
+        opacity: 0;
+        transform: translate(50%, -50%);    
+        }
+    }
+        .zag_left_2{
+        animation-name: left_2;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes left_2 {
+        0% {
+        opacity: 0;
+        transform: translate(50%, 0%);    
+        }
+    }
+        .zag_left_3{
+        animation-name: left_3;
+        animation-duration: 1s;
+        animation-delay: 5s;
+    }
+    @keyframes left_3 {
+        0% {
+        opacity: 0;
+        transform: translate(50%, 50%);    
+        }
+    }
+}
+
+
+
+/* *******burger********* */
+@media screen and (max-width: 768px) {
+    .burger{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        left: 95%;
+    }
+    .burger_burger{
+        width: 15px;
+        height: 2px;
+        background-color: #1B1D1F;
+        display: block;
+    }
+    .burger_burger::before,
+    .burger_burger::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #1B1D1F;
+        display: block;
+    }
+
+    .burger_burger::before {
+        transform: translateY(-5px);
+    }
+
+    .burger_burger::after {
+        transform: translateY(5px);
+    }
+
+    
+    .burger_burger:hover::before{
+        transition: .3s linear;
+        transform: rotate(-90deg);
+        background-color: #46B1DE;
+    }
+    .burger_burger:hover::after{
+        transition: .009s linear;
+        width: 0;
+        background-color: #46B1DE;
+    }
+
+    .burger_burger:hover{
+        transition: .3s linear;
+        transform: rotate(45deg);
+        background-color: #46B1DE;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .burger span:focus::after {
+        width: 0px;
+    } */
+
+
+    /* .burger_burger:hover::before {
+        transition: all .5s linear;
+        transform: rotate(-90deg);
+        background-color: #46B1DE;
+    }
+
+    .burger_burger:hover::after {
+        transition: all .05s linear;
+        width: 0;
+        background-color: #46B1DE;
+    }
+
+    .burger_burger:hover {
+        transition: all .5s linear;
+        transform: rotate(45deg);
+        background-color: #46B1DE;
+    } */
+}
